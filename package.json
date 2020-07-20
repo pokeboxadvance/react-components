@@ -4,9 +4,9 @@
   "description": "React components for Pokébox Advance",
   "main": "src/index.js",
   "scripts": {
-    "start": "start-storybook -p 9000",
+    "start": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 9000"
+    "storybook": "start-storybook -p 6006"
   },
   "repository": {
     "type": "git",
@@ -25,13 +25,24 @@
     "url": "https://github.com/pokeboxadvance/react-components/issues"
   },
   "homepage": "https://pokeboxadvance.net/",
+  "prettier": {
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "jsxSingleQuote": true
+  },
   "devDependencies": {
+    "@babel/core": "^7.10.5",
     "@storybook/react": "^5.3.19",
     "@styled-system/theme-get": "^5.1.2",
+    "@themed-styling/core": "^1.2.0",
     "babel-loader": "^8.1.0",
     "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "rollup": "^2.21.0",
     "styled-components": "^5.1.1"
-  }
+  },
+  "dependencies": {}
 }
