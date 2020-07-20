@@ -1,9 +1,8 @@
 import React from 'react'
 
-import Button from './lib/components/Button'
-import ButtonAnchor from './lib/components/ButtonAnchor'
-import theme from './lib/theme'
-
-export { Button, ButtonAnchor, theme }
+export { default as Anchor } from './lib/components/Anchor'
+export { default as Button } from './lib/components/Button'
+export { default as ButtonAnchor } from './lib/components/ButtonAnchor'
+export { default as theme } from './lib/theme'
 
 export const TestComponent = () => <div>test</div>

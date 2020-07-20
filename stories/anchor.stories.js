@@ -1,9 +1,15 @@
 import React from 'react'
 
-import { ButtonAnchor } from '../src/'
+import { Anchor, ButtonAnchor } from '../src/'
 
 export default {
   title: 'Anchor',
+}
+
+export const AnchorStory = () => <Anchor>Anchor</Anchor>
+
+AnchorStory.story = {
+  name: 'Anchor',
 }
 
 export const ButtonAnchorStory = () => (
