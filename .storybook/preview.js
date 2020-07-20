@@ -8,10 +8,10 @@ import checkers from './checkers.svg'
 // const roots = {
 //   options: {
 //     /**
-//     * Show top level groups differently
-//     */
-//     showRoots: true
-//   }
+//      * Show top level groups differently
+//      */
+//     showRoots: true,
+//   },
 // }
 
 const Checkers = createGlobalStyle`
