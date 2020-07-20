@@ -18,16 +18,5 @@ export const ButtonStory = () => (
 )
 
 ButtonStory.story = {
-  name: 'Button (<button>)',
-}
-
-export const ButtonAnchorStory = () => (
-  <>
-    <ButtonAnchor>Button Anchor</ButtonAnchor>
-    <ButtonAnchor inverted>Inverted Button Anchor</ButtonAnchor>
-  </>
-)
-
-ButtonAnchorStory.story = {
-  name: 'Button Anchor (<a>)',
+  name: 'Button',
 }
