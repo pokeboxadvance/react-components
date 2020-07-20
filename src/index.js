@@ -4,5 +4,3 @@ export { default as Anchor } from './lib/components/Anchor'
 export { default as Button } from './lib/components/Button'
 export { default as ButtonAnchor } from './lib/components/ButtonAnchor'
 export { default as theme } from './lib/theme'
-
-export const TestComponent = () => <div>test</div>
