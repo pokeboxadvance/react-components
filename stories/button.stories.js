@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button } from '../src/'
+import { Button, ButtonAnchor } from '../src/'
 
 export default {
   title: 'Button',
@@ -18,5 +18,16 @@ export const ButtonStory = () => (
 )
 
 ButtonStory.story = {
-  name: 'Button',
+  name: 'Button (<button>)',
+}
+
+export const ButtonAnchorStory = () => (
+  <>
+    <ButtonAnchor>Button Anchor</ButtonAnchor>
+    <ButtonAnchor inverted>Inverted Button Anchor</ButtonAnchor>
+  </>
+)
+
+ButtonAnchorStory.story = {
+  name: 'Button Anchor (<a>)',
 }
