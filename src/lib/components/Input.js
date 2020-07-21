@@ -32,6 +32,16 @@ const Input = styled.input`
     ${headingStyle}
     ${buttonStyle}
   }
+
+  &[type="checkbox"],
+  &[type="color"],
+  &[type="date"],
+  &[type="file"],
+  &[type="range"],
+  &[type="radio"],
+  &[type="time"] {
+    cursor: pointer;
+  }
 `
 
 export default ({ title, placeholder, value, ...props }) => (
