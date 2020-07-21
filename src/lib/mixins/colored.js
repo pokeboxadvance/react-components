@@ -1,24 +1,24 @@
 import { css } from 'styled-components'
 import { background, color } from '@themed-styling/core'
 
-const normalColours = css`
+const normalColors = css`
   ${color('colors.light')}
   ${background('colors.text')}
 `
 
-const invertedColours = css`
+const invertedColors = css`
   ${color('colors.text')}
   ${background('colors.light')}
 `
 
-const coloured = css`
-  ${({ inverted }) => (inverted ? invertedColours : normalColours)}
+const colored = css`
+  ${({ inverted }) => (inverted ? invertedColors : normalColors)}
 
   &:disabled {
-    background: ${color('colors.disabled')};
+    background: ${color('colors.disabled', true)};
     color: white;
     cursor: not-allowed;
   }
 `
 
-export default coloured
+export default colored
