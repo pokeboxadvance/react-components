@@ -12,31 +12,37 @@ import {
 
 import marginStyle from '../mixins/marginStyle'
 
-const normalStyle = css`
-  ${borderWidth('10px')}
+const normalColor = css`
   ${color('colors.main')}
 `
 
-const exStyle = css`
-  ${borderWidth('15px')}
+const exColor = css`
   ${color('colors.dark')}
+`
+
+const Container = styled.div`
+  ${marginStyle}
+  position: relative;
+  border-radius: 100vw;
+  display: inline-block;
+  height: ${({ size = '200px' }) => size};
+  width: ${({ size = '200px' }) => size};
+  ${({ ex }) => (ex ? exColor : normalColor)}
 `
 
 const Image = styled.img`
   border-radius: 100vw;
   height: 100%;
   width: 100%;
+  z-index: 1;
 `
 
-const Container = styled.div`
-${marginStyle}
-  position: relative;
-  border-radius: 100vw;
-  display: inline-block;
-  ${height('200px')}
-  ${maxHeight()}
-  ${width('200px')}
-  ${maxWidth()}
+const normalBorder = css`
+  ${({ size }) => size && `border-width: calc(${size} / 20);`}
+`
+
+const exBorder = css`
+  ${({ size }) => size && `border-width: calc(${size} / 14);`}
 `
 
 const Border = styled.div`
@@ -51,15 +57,25 @@ const Border = styled.div`
   box-sizing: border-box;
   height: 100%;
   width: 100%;
-  ${({ ex }) => (ex ? exStyle : normalStyle)}
+  z-index: 2;
+  ${({ ex }) => (ex ? exBorder : normalBorder)}
+  ${borderWidth()}
 `
 
-export default ({ id, name, ex, borderWidth, ...props }) => (
-  <Container role={'img'} alt={name} {...props}>
+export default ({
+  src,
+  id,
+  name,
+  ex,
+  borderWidth,
+  size = '200px',
+  ...props
+}) => (
+  <Container ex={ex} size={size} {...props}>
     <Image
-      src={`https://pokeboxadvance.net/assets/gyms/${id}.jpg`}
+      src={src || `https://pokeboxadvance.net/assets/gyms/${id}.jpg`}
       alt={name}
     />
-    <Border ex={ex} borderWidth={borderWidth} />
+    <Border ex={ex} size={size} borderWidth={borderWidth} />
   </Container>
 )

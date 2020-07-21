@@ -42,3 +42,56 @@ export const BothGymPhotoStory = () => (
 BothGymPhotoStory.story = {
   name: 'Both',
 }
+
+export const GymPhotoSizesStory = () => (
+  <Checkers>
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      size={'20px'}
+      margin={'0.5rem'}
+    />
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      size={'50px'}
+      margin={'0.5rem'}
+    />
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      size={'100px'}
+      margin={'0.5rem'}
+    />
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      size={'400px'}
+      margin={'0.5rem'}
+    />
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      ex
+      size={'20px'}
+      margin={'0.5rem'}
+    />
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      ex
+      size={'50px'}
+      margin={'0.5rem'}
+    />
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      ex
+      size={'100px'}
+      margin={'0.5rem'}
+    />
+    <GymPhoto
+      id={'49231f10-5164-11ea-b991-002590ebfe78'}
+      ex
+      size={'400px'}
+      margin={'0.5rem'}
+    />
+  </Checkers>
+)
+
+GymPhotoSizesStory.story = {
+  name: 'Different Sizes',
+}
