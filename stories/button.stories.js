@@ -20,6 +20,15 @@ export const ButtonStory = () => (
     <Button toggling inverted margin={'0.5rem'}>
       Inverted Toggling Button
     </Button>
+  </Checkers>
+)
+
+ButtonStory.story = {
+  name: 'Regular',
+}
+
+export const RoundButtonStory = () => (
+  <Checkers>
     <Button round margin={'0.5rem'}>
       R
     </Button>
@@ -35,6 +44,6 @@ export const ButtonStory = () => (
   </Checkers>
 )
 
-ButtonStory.story = {
-  name: 'Button',
+RoundButtonStory.story = {
+  name: 'Round',
 }
