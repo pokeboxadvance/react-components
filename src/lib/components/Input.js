@@ -15,11 +15,6 @@ const Input = styled.input`
   ${marginStyle}
   ${coloredStyle}
 
-  min-width: 0px;
-  border: none;
-  ${fontSize('fontSizes.text')}
-  ${width()}
-
   &[type="time"] {
     text-align: center;
   }

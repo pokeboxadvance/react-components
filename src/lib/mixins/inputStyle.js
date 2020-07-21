@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { background, color } from '@themed-styling/core'
+import { background, color, fontSize, width } from '@themed-styling/core'
 
 const shape = css`
   padding: 0.75em 1.5em;
@@ -10,8 +10,9 @@ const shape = css`
 export default css`
   ${shape}
 
-  transition: color 50ms linear, background-color 50ms linear,
-    border-color 50ms linear;
+  transition: color 50ms linear, background-color 50ms linear;
+  ${fontSize('fontSizes.text')}
+  ${width()}
 
   &:hover,
   &:focus,
