@@ -13,4 +13,11 @@ export default styled.a`
   ${marginStyle}
   text-decoration: none;
   ${width()}
+
+  /*&:not(:link):hover,
+  &:not(:link):focus,
+  &:not(:link):active {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+  }*/
 `

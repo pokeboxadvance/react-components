@@ -11,7 +11,13 @@ export default {
 
 export const AnchorStory = () => (
   <AppColors>
-    <Anchor style={{ display: 'inline-flex' }}>Anchor</Anchor>
+    <Anchor>No href here</Anchor>
+    <br />
+    <Anchor
+      href={'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a'}
+    >
+      Here is your href
+    </Anchor>
   </AppColors>
 )
 
@@ -29,7 +35,35 @@ export const ButtonAnchorStory = () => (
       RA
     </ButtonAnchor>
     <ButtonAnchor round inverted margin={'0.5rem'}>
-      RA
+      IRA
+    </ButtonAnchor>
+    <ButtonAnchor
+      href={'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a'}
+      margin={'0.5rem'}
+    >
+      Button Anchor w/ href
+    </ButtonAnchor>
+    <ButtonAnchor
+      href={'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a'}
+      inverted
+      margin={'0.5rem'}
+    >
+      Inverted Button Anchor w/ href
+    </ButtonAnchor>
+    <ButtonAnchor
+      href={'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a'}
+      round
+      margin={'0.5rem'}
+    >
+      RAH
+    </ButtonAnchor>
+    <ButtonAnchor
+      href={'https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a'}
+      round
+      inverted
+      margin={'0.5rem'}
+    >
+      IRAH
     </ButtonAnchor>
   </Checkers>
 )
