@@ -11,3 +11,5 @@ export { default as Paragraph } from './lib/components/Paragraph'
 export { default as TextPlaceholder } from './lib/components/TextPlaceholder'
 
 export { default as theme } from './lib/theme'
+
+export { default as GlobalFonts } from './lib/GlobalFonts'
