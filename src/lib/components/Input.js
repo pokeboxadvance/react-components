@@ -23,12 +23,20 @@ const Input = styled.input`
     opacity: 0.5;
   }
 
-  &[type="submit"] {
+  &[type="submit"],
+  &[type="button"],
+  &[type="image"],
+  &[type="reset"] {
     ${headingStyle}
     ${buttonStyle}
   }
 `
 
-export default ({ title, placeholder, ...props }) => (
-  <Input title={title || placeholder} placeholder={placeholder} {...props} />
+export default ({ title, placeholder, value, ...props }) => (
+  <Input
+    title={title || placeholder || value}
+    value={value}
+    placeholder={placeholder}
+    {...props}
+  />
 )
