@@ -1,23 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
-import { background, color, float, fontSize, width } from '@themed-styling/core'
+import { background, color, fontSize, width } from '@themed-styling/core'
 
-import input from '../mixins/input'
-import button from '../mixins/button'
-import noMargin from '../mixins/noMargin'
-import colored from '../mixins/colored'
+import inputStyle from '../mixins/inputStyle'
+import buttonStyle from '../mixins/buttonStyle'
+import marginStyle from '../mixins/marginStyle'
+import coloredStyle from '../mixins/coloredStyle'
+import headingStyle from '../mixins/headingStyle'
 
 // TODO: ${fontFamily('fonts.text')}
 
 const Input = styled.input`
-  ${input}
-  ${noMargin}
+  ${inputStyle}
+  ${marginStyle}
+  ${coloredStyle}
 
-  min-width: 0;
+  min-width: 0px;
   border: none;
-  ${width('100%')}
   ${fontSize('fontSizes.text')}
-  ${float()}
+  ${width()}
 
   &[type="time"] {
     text-align: center;
@@ -28,7 +29,8 @@ const Input = styled.input`
   }
 
   &[type="submit"] {
-    ${button}
+    ${headingStyle}
+    ${buttonStyle}
   }
 `
 

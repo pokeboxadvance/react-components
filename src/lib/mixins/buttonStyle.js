@@ -8,9 +8,6 @@ import {
   dropShadow,
 } from '@themed-styling/core'
 
-import heading from './heading'
-import colored from './colored'
-
 export const normalShape = css`
   padding: 0.75em 1.5em;
 `
@@ -51,9 +48,6 @@ const normalActive = css`
 // ${transition('transitions.in')}
 
 const button = css`
-  ${heading}
-  ${colored}
-
   border: none;
   border-radius: 100vw;
   display: inline-flex;

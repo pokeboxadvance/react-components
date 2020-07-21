@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import anchor from '../mixins/anchor'
+import anchorStyle from '../mixins/anchorStyle'
 
 export default styled.a`
-  ${anchor}
+  ${anchorStyle}
   text-decoration: none;
 `

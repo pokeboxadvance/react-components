@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 import { width } from '@themed-styling/core'
 
-import button from '../mixins/button'
-import noMargin from '../mixins/noMargin'
+import headingStyle from '../mixins/headingStyle'
+import coloredStyle from '../mixins/coloredStyle'
+import buttonStyle from '../mixins/buttonStyle'
+import marginStyle from '../mixins/marginStyle'
 
 export default styled.button`
-  ${button}
-  ${noMargin}
+  ${headingStyle}
+  ${coloredStyle}
+  ${buttonStyle}
+  ${marginStyle}
   ${width()}
 `

@@ -11,5 +11,11 @@ export { default as Paragraph } from './lib/components/Paragraph'
 export { default as TextPlaceholder } from './lib/components/TextPlaceholder'
 
 export { default as theme } from './lib/theme'
+export { default as anchorStyle } from './lib/mixins/anchorStyle'
+export { default as buttonStyle } from './lib/mixins/buttonStyle'
+export { default as coloredStyle } from './lib/mixins/coloredStyle'
+export { default as headingStyle } from './lib/mixins/headingStyle'
+export { default as inputStyle } from './lib/mixins/inputStyle'
+export { default as marginStyle } from './lib/mixins/marginStyle'
 
 export { default as GlobalFonts } from './lib/GlobalFonts'

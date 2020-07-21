@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import { fontSize } from '@themed-styling/core'
 
-import noMargin from '../mixins/noMargin'
+import marginStyle from '../mixins/marginStyle'
 
 export default styled.p`
-  ${noMargin}
+  ${marginStyle}
   ${fontSize('fontSizes.text')}
 `

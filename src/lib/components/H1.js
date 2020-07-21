@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import { fontSize } from '@themed-styling/core'
 
-import heading from '../mixins/heading'
-import noMargin from '../mixins/noMargin'
+import headingStyle from '../mixins/headingStyle'
+import marginStyle from '../mixins/marginStyle'
 
 export default styled.h1`
-  ${heading}
-  ${noMargin}
+  ${headingStyle}
+  ${marginStyle}
   ${fontSize('fontSizes.h1')}
 `

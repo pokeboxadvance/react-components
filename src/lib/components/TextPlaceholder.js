@@ -8,10 +8,10 @@ import {
   marginLeft,
 } from '@themed-styling/core'
 
-import noMargin from '../mixins/noMargin'
+import marginStyle from '../mixins/marginStyle'
 
 export default styled.span`
-  ${noMargin}
+  ${marginStyle}
   display: inline-block;
   height: 1em;
   ${width('50px')}

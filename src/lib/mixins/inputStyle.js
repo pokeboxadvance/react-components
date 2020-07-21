@@ -1,8 +1,6 @@
 import { css } from 'styled-components'
 import { background, color } from '@themed-styling/core'
 
-import colored from './colored'
-
 const shape = css`
   padding: 0.75em 1.5em;
   border: none;
@@ -11,7 +9,6 @@ const shape = css`
 
 export default css`
   ${shape}
-  ${colored}
 
   transition: color 50ms linear, background-color 50ms linear,
     border-color 50ms linear;
