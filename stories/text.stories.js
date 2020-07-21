@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { H1, H2, H3, Paragraph, TextPlaceholder } from '../src/'
+import { H1, H2, H3, Paragraph, TextPlaceholder, Anchor } from '../src/'
 
 import AppColors from './util/AppColors'
 
@@ -46,7 +46,10 @@ export const ParagraphStory = () => (
       particular point or idea. A paragraph consists of one or more
       sentences.[1] Though not required by the syntax of any language,[citation
       needed] paragraphs are usually an expected part of formal writing, used to
-      organize longer prose.
+      organize longer prose.{' '}
+      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
+        https://en.wikipedia.org/wiki/Paragraph
+      </Anchor>
     </Paragraph>
   </AppColors>
 )
@@ -76,7 +79,10 @@ export const TextStory = () => (
       particular point or idea. A paragraph consists of one or more
       sentences.[1] Though not required by the syntax of any language,[citation
       needed] paragraphs are usually an expected part of formal writing, used to
-      organize longer prose.
+      organize longer prose.{' '}
+      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
+        https://en.wikipedia.org/wiki/Paragraph
+      </Anchor>
     </Paragraph>
     <H2 marginBottom={'spaces.between.items'}>This is Heading 1.1</H2>
     <Paragraph marginBottom={'spaces.between.groups'}>
@@ -85,7 +91,10 @@ export const TextStory = () => (
       particular point or idea. A paragraph consists of one or more
       sentences.[1] Though not required by the syntax of any language,[citation
       needed] paragraphs are usually an expected part of formal writing, used to
-      organize longer prose.
+      organize longer prose.{' '}
+      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
+        https://en.wikipedia.org/wiki/Paragraph
+      </Anchor>
     </Paragraph>
     <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.1</H3>
     <Paragraph marginBottom={'spaces.between.groups'}>
@@ -94,7 +103,10 @@ export const TextStory = () => (
       particular point or idea. A paragraph consists of one or more
       sentences.[1] Though not required by the syntax of any language,[citation
       needed] paragraphs are usually an expected part of formal writing, used to
-      organize longer prose.
+      organize longer prose.{' '}
+      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
+        https://en.wikipedia.org/wiki/Paragraph
+      </Anchor>
     </Paragraph>
     <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.2</H3>
     <TextPlaceholder width={'100%'} />
