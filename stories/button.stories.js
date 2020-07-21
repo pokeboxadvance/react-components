@@ -10,20 +10,26 @@ export default {
 
 export const ButtonStory = () => (
   <Checkers>
-    <Button>Regular Button</Button>
-    <Button inverted>Inverted Button</Button>
-    <Button toggling>Regular Toggling Button</Button>
-    <Button toggling inverted>
+    <Button margin={'0.5rem'}>Regular Button</Button>
+    <Button inverted margin={'0.5rem'}>
+      Inverted Button
+    </Button>
+    <Button toggling margin={'0.5rem'}>
+      Regular Toggling Button
+    </Button>
+    <Button toggling inverted margin={'0.5rem'}>
       Inverted Toggling Button
     </Button>
-    <Button round>R</Button>
-    <Button round inverted>
+    <Button round margin={'0.5rem'}>
+      R
+    </Button>
+    <Button round inverted margin={'0.5rem'}>
       IR
     </Button>
-    <Button round toggling>
+    <Button round toggling margin={'0.5rem'}>
       RT
     </Button>
-    <Button round toggling inverted>
+    <Button round toggling inverted margin={'0.5rem'}>
       IRT
     </Button>
   </Checkers>
