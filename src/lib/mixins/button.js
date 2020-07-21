@@ -56,7 +56,7 @@ const button = css`
 
   border: none;
   border-radius: 100vw;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
