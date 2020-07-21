@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { H1, H2, H3, Paragraph } from '../src/'
+import { H1, H2, H3, Paragraph, TextPlaceholder } from '../src/'
 
 import AppColors from './util/AppColors'
 
@@ -20,7 +20,7 @@ H1Story.story = {
 
 export const H2Story = () => (
   <AppColors>
-    <H2>This is Heading 2</H2>
+    <H2>This is Heading 1.1</H2>
   </AppColors>
 )
 
@@ -30,7 +30,7 @@ H2Story.story = {
 
 export const H3Story = () => (
   <AppColors>
-    <H3>This is Heading 3</H3>
+    <H3>This is Heading 1.1.1</H3>
   </AppColors>
 )
 
@@ -53,6 +53,18 @@ ParagraphStory.story = {
   name: 'Paragraph',
 }
 
+export const TextPlaceholderStory = () => (
+  <AppColors>
+    <TextPlaceholder marginRight={'1rem'} />
+    <TextPlaceholder width={'160px'} marginRight={'1rem'} />
+    <TextPlaceholder width={'80px'} marginRight={'1rem'} />
+  </AppColors>
+)
+
+TextPlaceholderStory.story = {
+  name: 'Text Placeholder',
+}
+
 export const TextStory = () => (
   <AppColors>
     <H1>This is Heading 1</H1>
@@ -62,20 +74,22 @@ export const TextStory = () => (
       text. This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text.
     </Paragraph>
-    <H2>This is Heading 2</H2>
+    <H2>This is Heading 1.1</H2>
     <Paragraph>
       This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text. This is a paragraph of text. This is a paragraph of
       text. This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text.
     </Paragraph>
-    <H3>This is Heading 3</H3>
+    <H3>This is Heading 1.1.1</H3>
     <Paragraph>
       This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text. This is a paragraph of text. This is a paragraph of
       text. This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text.
     </Paragraph>
+    <H3>This is Heading 1.1.2</H3>
+    <TextPlaceholder width={'100%'} />
   </AppColors>
 )
 
