@@ -10,6 +10,8 @@ import headingStyle from '../mixins/headingStyle'
 
 // TODO: ${fontFamily('fonts.text')}
 
+// TODO: checkbox, color, ~file, range, radio styling
+
 const Input = styled.input`
   ${inputStyle}
   ${marginStyle}

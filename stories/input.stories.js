@@ -8,8 +8,6 @@ export default {
   title: 'Input',
 }
 
-// TODO: checkbox, color, ~file, range, radio
-
 export const AllInputsStory = () => (
   <Checkers>
     <Input type={'checkbox'} placeholder={'Checkbox Input'} margin={'0.5rem'} />
