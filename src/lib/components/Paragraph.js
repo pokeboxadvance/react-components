@@ -1,3 +1,7 @@
 import styled from 'styled-components'
 
-export default styled.p``
+import noMargin from '../mixins/noMargin'
+
+export default styled.p`
+  ${noMargin}
+`

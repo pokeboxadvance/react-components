@@ -8,15 +8,13 @@ import {
   marginLeft,
 } from '@themed-styling/core'
 
+import noMargin from '../mixins/noMargin'
+
 export default styled.span`
+  ${noMargin}
   display: inline-block;
   height: 1em;
   ${width('50px')}
-  ${margin()}
-  ${marginTop()}
-  ${marginLeft()}
-  ${marginBottom()}
-  ${marginRight()}
 
   background: currentcolor;
 
