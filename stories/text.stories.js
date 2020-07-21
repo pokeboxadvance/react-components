@@ -41,10 +41,12 @@ H3Story.story = {
 export const ParagraphStory = () => (
   <AppColors>
     <Paragraph>
-      This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text. This is a paragraph of text. This is a paragraph of
-      text. This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text.
+      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
+      beside") is a self-contained unit of discourse in writing dealing with a
+      particular point or idea. A paragraph consists of one or more
+      sentences.[1] Though not required by the syntax of any language,[citation
+      needed] paragraphs are usually an expected part of formal writing, used to
+      organize longer prose.
     </Paragraph>
   </AppColors>
 )
@@ -69,24 +71,30 @@ export const TextStory = () => (
   <AppColors>
     <H1 marginBottom={'spaces.between.items'}>This is Heading 1</H1>
     <Paragraph marginBottom={'spaces.between.groups'}>
-      This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text. This is a paragraph of text. This is a paragraph of
-      text. This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text.
+      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
+      beside") is a self-contained unit of discourse in writing dealing with a
+      particular point or idea. A paragraph consists of one or more
+      sentences.[1] Though not required by the syntax of any language,[citation
+      needed] paragraphs are usually an expected part of formal writing, used to
+      organize longer prose.
     </Paragraph>
     <H2 marginBottom={'spaces.between.items'}>This is Heading 1.1</H2>
     <Paragraph marginBottom={'spaces.between.groups'}>
-      This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text. This is a paragraph of text. This is a paragraph of
-      text. This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text.
+      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
+      beside") is a self-contained unit of discourse in writing dealing with a
+      particular point or idea. A paragraph consists of one or more
+      sentences.[1] Though not required by the syntax of any language,[citation
+      needed] paragraphs are usually an expected part of formal writing, used to
+      organize longer prose.
     </Paragraph>
     <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.1</H3>
     <Paragraph marginBottom={'spaces.between.groups'}>
-      This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text. This is a paragraph of text. This is a paragraph of
-      text. This is a paragraph of text. This is a paragraph of text. This is a
-      paragraph of text.
+      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
+      beside") is a self-contained unit of discourse in writing dealing with a
+      particular point or idea. A paragraph consists of one or more
+      sentences.[1] Though not required by the syntax of any language,[citation
+      needed] paragraphs are usually an expected part of formal writing, used to
+      organize longer prose.
     </Paragraph>
     <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.2</H3>
     <TextPlaceholder width={'100%'} />
