@@ -18,8 +18,8 @@ export const normalShape = css`
 const roundShape = css`
   justify-content: center;
   align-items: center;
-  height: 1em;
-  width: 1em;
+  height: 0;
+  width: 0;
   padding: 1.5em;
 `
 
