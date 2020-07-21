@@ -11,62 +11,77 @@ import {
 import heading from './heading'
 import colored from './colored'
 
-export const shape = css`
+export const normalShape = css`
   padding: 0.75em 1.5em;
-  border: none;
-  border-radius: 100vw;
 `
 
-const togglingAccent = css`
-  ${color('colors.text', true)}
-  ${background('colors.accent', true)}
-`
-
-const togglingInteract = css`
-  ${color('colors.text', true)}
-  ${background('colors.accent', true)}
-`
-
-const noDimension = css`
+const roundShape = css`
   justify-content: center;
   align-items: center;
-  height: 0;
-  width: 0;
-  padding: 1em;
+  height: 1em;
+  width: 1em;
+  padding: 1.5em;
+`
+
+const togglingHover = css`
+  transform: scale(1.05);
+`
+
+const togglingFocus = css``
+
+const togglingActive = css`
+  transform: scale(1);
+  ${color('colors.text', true)}
+  ${background('colors.interact', true)}
+`
+
+const normalHover = css`
+  ${color('colors.text', true)}
+  ${background('colors.accent', true)}
+`
+
+const normalFocus = css``
+
+const normalActive = css`
+  transform: scale(0.9);
+  ${color('colors.text', true)}
+  ${background('colors.interact', true)}
 `
 
 // ${transition('transitions.in')}
 
 const button = css`
-  ${shape}
   ${heading}
   ${colored}
 
+  border: none;
+  border-radius: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background 50ms linear, border-color 50ms linear,
-    color 50ms linear, transform 200ms ;
+    color 50ms linear, transform 200ms;
   ${fontSize('1em')}
-  ${margin('auto')}
   ${boxShadow()}
   ${dropShadow()}
 
   &:hover:not(:disabled),
+  &.hover:not(:disabled) {
+    ${({ toggling }) => (toggling ? togglingHover : normalHover)}
+  }
+
   &:focus:not(:disabled),
-  &.hover:not(:disabled),
   &.focus:not(:disabled) {
-    ${({ toggling }) => (toggling ? 'transform: scale(1.1);' : togglingAccent)}
+    ${({ toggling }) => (toggling ? togglingFocus : normalFocus)}
   }
 
   &:active:not(:disabled),
   &.active:not(:disabled) {
-    transform: scale(0.9);
-    ${({ toggling }) => (toggling ? '' : togglingInteract)}
+    ${({ toggling }) => (toggling ? togglingActive : normalActive)}
   }
 
-  ${({ round }) => round && noDimension}
+  ${({ round }) => (round ? roundShape : normalShape)}
 `
 
 export default button
