@@ -1,11 +1,30 @@
 import React from 'react'
 
-import { Input } from '../src/'
+import { Input, Select } from '../src/'
 
 import Checkers from './util/Checkers'
 
 export default {
   title: 'Input',
+}
+
+export const SelectStory = () => (
+  <Checkers>
+    <Select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
+    <Select inverted>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
+  </Checkers>
+)
+
+SelectStory.story = {
+  name: 'Select',
 }
 
 export const AllInputsStory = () => (

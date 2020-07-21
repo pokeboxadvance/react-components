@@ -9,6 +9,7 @@ export { default as H2 } from './lib/components/H2'
 export { default as H3 } from './lib/components/H3'
 export { default as Input } from './lib/components/Input'
 export { default as Paragraph } from './lib/components/Paragraph'
+export { default as Select } from './lib/components/Select'
 export { default as TextPlaceholder } from './lib/components/TextPlaceholder'
 
 export { default as theme } from './lib/theme'
