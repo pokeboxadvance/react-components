@@ -1,25 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
-import { background, color, fontSize, width } from '@themed-styling/core'
+import { background, color, float, fontSize, width } from '@themed-styling/core'
 
 import input from '../mixins/input'
 import button from '../mixins/button'
+import noMargin from '../mixins/noMargin'
+import colored from '../mixins/colored'
+
+// TODO: ${fontFamily('fonts.text')}
 
 const Input = styled.input`
   ${input}
+  ${noMargin}
 
-  display: flex;
   min-width: 0;
-  margin: 0;
-  font-family: Lato, sans-serif;
   border: none;
-  flex: 0;
-  ${({ float }) => float && `float: ${float};`}
-  ${({ inverted }) => (inverted ? 'color: white;' : color('colors.light'))}
-  ${({ inverted }) =>
-    inverted ? background('colors.light') : 'background: white;'}
   ${width('100%')}
-  ${fontSize('fontSize.text')}
+  ${fontSize('fontSizes.text')}
+  ${float()}
 
   &[type="time"] {
     text-align: center;
@@ -34,6 +32,6 @@ const Input = styled.input`
   }
 `
 
-export default ({ placeholder, ...props }) => (
-  <Input title={placeholder} placeholder={placeholder} {...props} />
+export default ({ title, placeholder, ...props }) => (
+  <Input title={title || placeholder} placeholder={placeholder} {...props} />
 )
