@@ -67,28 +67,28 @@ TextPlaceholderStory.story = {
 
 export const TextStory = () => (
   <AppColors>
-    <H1>This is Heading 1</H1>
-    <Paragraph>
+    <H1 marginBottom={'spaces.between.items'}>This is Heading 1</H1>
+    <Paragraph marginBottom={'spaces.between.groups'}>
       This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text. This is a paragraph of text. This is a paragraph of
       text. This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text.
     </Paragraph>
-    <H2>This is Heading 1.1</H2>
-    <Paragraph>
+    <H2 marginBottom={'spaces.between.items'}>This is Heading 1.1</H2>
+    <Paragraph marginBottom={'spaces.between.groups'}>
       This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text. This is a paragraph of text. This is a paragraph of
       text. This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text.
     </Paragraph>
-    <H3>This is Heading 1.1.1</H3>
-    <Paragraph>
+    <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.1</H3>
+    <Paragraph marginBottom={'spaces.between.groups'}>
       This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text. This is a paragraph of text. This is a paragraph of
       text. This is a paragraph of text. This is a paragraph of text. This is a
       paragraph of text.
     </Paragraph>
-    <H3>This is Heading 1.1.2</H3>
+    <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.2</H3>
     <TextPlaceholder width={'100%'} />
   </AppColors>
 )
