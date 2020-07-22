@@ -8,25 +8,6 @@ export default {
   title: 'Input',
 }
 
-export const SelectStory = () => (
-  <Checkers>
-    <Select>
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
-    </Select>
-    <Select inverted>
-      <option>Option 1</option>
-      <option>Option 2</option>
-      <option>Option 3</option>
-    </Select>
-  </Checkers>
-)
-
-SelectStory.story = {
-  name: 'Select',
-}
-
 export const AllInputsStory = () => (
   <Checkers>
     <Input type={'checkbox'} placeholder={'Checkbox Input'} margin={'0.5rem'} />
@@ -63,6 +44,11 @@ export const AllInputsStory = () => (
     />
     <Input type={'reset'} value={'Reset Input'} margin={'0.5rem'} />
     <Input type={'submit'} value={'Submit Input'} margin={'0.5rem'} />
+    <Select margin={'0.5rem'}>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
 
     <Input
       type={'checkbox'}
@@ -170,9 +156,49 @@ export const AllInputsStory = () => (
     />
     <Input type={'reset'} value={'Reset Input'} inverted margin={'0.5rem'} />
     <Input type={'submit'} value={'Submit Input'} inverted margin={'0.5rem'} />
+    <Select inverted margin={'0.5rem'}>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
   </Checkers>
 )
 
 AllInputsStory.story = {
   name: 'All',
+}
+
+export const SelectStory = () => (
+  <Checkers margin={'0.5rem'}>
+    <Select>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
+    <Select inverted margin={'0.5rem'}>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Select>
+  </Checkers>
+)
+
+SelectStory.story = {
+  name: 'Select',
+}
+
+export const RangeInputStory = () => (
+  <Checkers>
+    <Input type={'range'} placeholder={'Range Input'} margin={'0.5rem'} />
+    <Input
+      type={'range'}
+      placeholder={'Range Input'}
+      inverted
+      margin={'0.5rem'}
+    />
+  </Checkers>
+)
+
+RangeInputStory.story = {
+  name: 'Range',
 }
