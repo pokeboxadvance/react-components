@@ -4,14 +4,14 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components'
 
 import { theme, GlobalFonts } from '../src'
 
-// const roots = {
-//   options: {
-//     /**
-//      * Show top level groups differently
-//      */
-//     showRoots: true,
-//   },
-// }
+const roots = {
+  options: {
+    /**
+     * Show top level groups differently
+     */
+    showRoots: true,
+  },
+}
 
 const themeProvider = story => (
   <ThemeProvider theme={theme}>
@@ -20,5 +20,5 @@ const themeProvider = story => (
   </ThemeProvider>
 )
 
-// addParameters(roots)
+addParameters(roots)
 addDecorator(themeProvider)
