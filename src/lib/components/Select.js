@@ -4,11 +4,14 @@ import { width, fontSize } from '@themed-styling/core'
 
 import coloredStyle from '../mixins/coloredStyle'
 import inputStyle from '../mixins/inputStyle'
+import marginStyle from '../mixins/marginStyle'
 
 const Select = styled.select`
   ${coloredStyle}
   ${inputStyle}
+  ${marginStyle}
   cursor: pointer;
+  ${fontSize('fontSizes.text')}
 
   & > option:disabled {
     opacity: 0.5;
