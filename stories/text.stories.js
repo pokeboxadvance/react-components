@@ -8,6 +8,53 @@ export default {
   title: 'Text',
 }
 
+export const TextStory = () => (
+  <AppColors>
+    <H1 marginBottom={'spaces.between.items'}>This is Heading 1</H1>
+    <Paragraph marginBottom={'spaces.between.groups'}>
+      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
+      beside") is a self-contained unit of discourse in writing dealing with a
+      particular point or idea. A paragraph consists of one or more
+      sentences.[1] Though not required by the syntax of any language,[citation
+      needed] paragraphs are usually an expected part of formal writing, used to
+      organize longer prose.{' '}
+      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
+        https://en.wikipedia.org/wiki/Paragraph
+      </Anchor>
+    </Paragraph>
+    <H2 marginBottom={'spaces.between.items'}>This is Heading 1.1</H2>
+    <Paragraph marginBottom={'spaces.between.groups'}>
+      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
+      beside") is a self-contained unit of discourse in writing dealing with a
+      particular point or idea. A paragraph consists of one or more
+      sentences.[1] Though not required by the syntax of any language,[citation
+      needed] paragraphs are usually an expected part of formal writing, used to
+      organize longer prose.{' '}
+      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
+        https://en.wikipedia.org/wiki/Paragraph
+      </Anchor>
+    </Paragraph>
+    <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.1</H3>
+    <Paragraph marginBottom={'spaces.between.groups'}>
+      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
+      beside") is a self-contained unit of discourse in writing dealing with a
+      particular point or idea. A paragraph consists of one or more
+      sentences.[1] Though not required by the syntax of any language,[citation
+      needed] paragraphs are usually an expected part of formal writing, used to
+      organize longer prose.{' '}
+      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
+        https://en.wikipedia.org/wiki/Paragraph
+      </Anchor>
+    </Paragraph>
+    <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.2</H3>
+    <TextPlaceholder width={'100%'} />
+  </AppColors>
+)
+
+TextStory.story = {
+  name: 'All',
+}
+
 export const H1Story = () => (
   <AppColors>
     <H1>This is Heading 1</H1>
@@ -68,51 +115,4 @@ export const TextPlaceholderStory = () => (
 
 TextPlaceholderStory.story = {
   name: 'Text Placeholder',
-}
-
-export const TextStory = () => (
-  <AppColors>
-    <H1 marginBottom={'spaces.between.items'}>This is Heading 1</H1>
-    <Paragraph marginBottom={'spaces.between.groups'}>
-      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
-      beside") is a self-contained unit of discourse in writing dealing with a
-      particular point or idea. A paragraph consists of one or more
-      sentences.[1] Though not required by the syntax of any language,[citation
-      needed] paragraphs are usually an expected part of formal writing, used to
-      organize longer prose.{' '}
-      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
-        https://en.wikipedia.org/wiki/Paragraph
-      </Anchor>
-    </Paragraph>
-    <H2 marginBottom={'spaces.between.items'}>This is Heading 1.1</H2>
-    <Paragraph marginBottom={'spaces.between.groups'}>
-      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
-      beside") is a self-contained unit of discourse in writing dealing with a
-      particular point or idea. A paragraph consists of one or more
-      sentences.[1] Though not required by the syntax of any language,[citation
-      needed] paragraphs are usually an expected part of formal writing, used to
-      organize longer prose.{' '}
-      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
-        https://en.wikipedia.org/wiki/Paragraph
-      </Anchor>
-    </Paragraph>
-    <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.1</H3>
-    <Paragraph marginBottom={'spaces.between.groups'}>
-      A paragraph (from the Ancient Greek παράγραφος, parágraphos, "to write
-      beside") is a self-contained unit of discourse in writing dealing with a
-      particular point or idea. A paragraph consists of one or more
-      sentences.[1] Though not required by the syntax of any language,[citation
-      needed] paragraphs are usually an expected part of formal writing, used to
-      organize longer prose.{' '}
-      <Anchor href={'https://en.wikipedia.org/wiki/Paragraph'}>
-        https://en.wikipedia.org/wiki/Paragraph
-      </Anchor>
-    </Paragraph>
-    <H3 marginBottom={'spaces.between.items'}>This is Heading 1.1.2</H3>
-    <TextPlaceholder width={'100%'} />
-  </AppColors>
-)
-
-TextStory.story = {
-  name: 'Text (All)',
 }
