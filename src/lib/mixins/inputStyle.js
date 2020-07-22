@@ -11,8 +11,6 @@ export default css`
   ${shape}
 
   transition: color 50ms linear, background-color 50ms linear;
-  ${fontSize('fontSizes.text')}
-  ${width()}
 
   &:hover,
   &:focus,
