@@ -2,11 +2,15 @@
   "name": "@pokeboxadvance/react-components",
   "version": "0.0.1-alpha",
   "description": "React components for Pokébox Advance",
-  "main": "src/index.js",
+  "main": "dist/react-components.cjs.js",
+  "module": "dist/react-components.esm.js",
   "scripts": {
     "start": "start-storybook -p 6006",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -35,9 +39,13 @@
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@openfonts/lato_latin": "^1.44.1",
-    "@storybook/react": "^5.3.19",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-sucrase": "^3.1.0",
+    "@rollup/plugin-url": "^5.0.1",
+    "@storybook/react": "^6.0.21",
     "@styled-system/theme-get": "^5.1.2",
-    "@themed-styling/core": "^1.2.0",
+    "@themed-styling/core": "^2.0.1",
     "babel-loader": "^8.1.0",
     "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
@@ -45,5 +53,9 @@
     "rollup": "^2.21.0",
     "styled-components": "^5.1.1"
   },
-  "dependencies": {}
+  "peerDependencies": {
+    "styled-components": "^5.1.1",
+    "react": "^16.13.1",
+    "@themed-styling/core": "^2.0.0"
+  }
 }
